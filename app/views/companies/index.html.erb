@@ -1,0 +1,10 @@
+<h1>Companies</h1>
+
+<% companies = Company.all %>  #company model talks to companies table
+<ul>
+<% for company in companies %>
+  <li>
+    <%= company["name"] %>
+  </li>
+  <% end %>
+</ul>
